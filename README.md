@@ -5,7 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/YourGitHubUsername/Animals.Id)](https://github.com/YourGitHubUsername/Animals.Id/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/YourGitHubUsername/Animals.Id)](https://github.com/YourGitHubUsername/Animals.Id/stargazers)
 
-![Animals.Id Banner](public/animals-logo-favicon.png)
+![Animals.Id Banner](public//assets/img/animals-logo-favicon.png)
 
 Animals.Id is a comprehensive **pet services and e-commerce platform** designed to improve pet care through **innovative technology** and **expert veterinary knowledge**. From grooming to adoption, from pet training to product shopping, Animals.Id connects pet owners with the services and products they need—all in one place.
 
@@ -94,7 +94,7 @@ animals-id/
 
 | Name                  | Role               | Description                                                              |
 | --------------------- | ------------------ | ------------------------------------------------------------------------ |
-| **Chaerudin Saputra** | CEO                | 15+ years in veterinary care, leading pet health innovations             |
+| **Chaerudin Saputra** | CEO                | Leading pet health innovations                                           |
 | **Adrian Halim**      | Founder & CTO      | Tech innovator passionate about seamless digital experiences             |
 | **Kirana**            | COO                | Former pet shop owner with deep knowledge of pet needs and customer care |
 
