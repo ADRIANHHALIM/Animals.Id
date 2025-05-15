@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 190 76% 59%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 120 60% 60%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 25 100% 68%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 190 76% 59%;
+
+    --radius: 1rem;
+    
+    /* Add the missing animal color variables */
+    --animal-blue: 190 76% 59%;
+    --animal-green: 120 60% 60%;
+    --animal-coral: 25 100% 68%;
+    --animal-yellow: 45 100% 65%;
+    --animal-purple: 270 60% 65%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 190 76% 59%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 120 60% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 25 100% 68%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 190 76% 59%;
+    
+    /* Add the missing animal color variables for dark mode */
+    --animal-blue: 190 76% 59%;
+    --animal-green: 120 60% 60%;
+    --animal-coral: 25 100% 68%;
+    --animal-yellow: 45 100% 65%;
+    --animal-purple: 270 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-nunito;
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-animal-blue via-animal-green to-animal-coral;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollable {
+    overflow-y: auto;
+  }
+  }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Card hover effects */
+.team-card {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateZ(20px);
+}
+
+/* Add these utility classes */
+.text-animal-yellow {
+  color: hsl(var(--animal-yellow));
+}
+.bg-animal-yellow {
+  background-color: hsl(var(--animal-yellow));
+}
+.border-animal-yellow {
+  border-color: hsl(var(--animal-yellow));
+}
+
+.text-animal-purple {
+  color: hsl(var(--animal-purple));
+}
+.bg-animal-purple {
+  background-color: hsl(var(--animal-purple));
+}
+.border-animal-purple {
+  border-color: hsl(var(--animal-purple));
+}
+
+/* Add these utility classes */
+.text-animal-yellow {
+  color: hsl(var(--animal-yellow));
+}
+.bg-animal-yellow {
+  background-color: hsl(var(--animal-yellow));
+}
+.border-animal-yellow {
+  border-color: hsl(var(--animal-yellow));
+}
+
+.text-animal-purple {
+  color: hsl(var(--animal-purple));
+}
+.bg-animal-purple {
+  background-color: hsl(var(--animal-purple));
+}
+.border-animal-purple {
+  border-color: hsl(var(--animal-purple));
+}
+.text-animal-green {
+  color: hsl(var(--animal-green));
+}
+.bg-animal-green {
+  background-color: hsl(var(--animal-green));
+}
+.border-animal-green {
+  border-color: hsl(var(--animal-green));
+}
